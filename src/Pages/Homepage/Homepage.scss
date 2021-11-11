@@ -1,0 +1,24 @@
+.main__container {
+  margin: 80px 30px;
+}
+
+.main__navbar {
+  top: 0;
+  width: 100%;
+}
+
+.main__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main__header {
+  color: #333;
+  text-align: center;
+}
+
+.main__footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
