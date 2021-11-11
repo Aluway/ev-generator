@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ev-generator/static/css/main.9e54b37b.chunk.css",
+    "main.js": "/ev-generator/static/js/main.96dad088.chunk.js",
+    "main.js.map": "/ev-generator/static/js/main.96dad088.chunk.js.map",
+    "runtime-main.js": "/ev-generator/static/js/runtime-main.9040c702.js",
+    "runtime-main.js.map": "/ev-generator/static/js/runtime-main.9040c702.js.map",
+    "static/js/2.3bbbd266.chunk.js": "/ev-generator/static/js/2.3bbbd266.chunk.js",
+    "static/js/2.3bbbd266.chunk.js.map": "/ev-generator/static/js/2.3bbbd266.chunk.js.map",
+    "index.html": "/ev-generator/index.html",
+    "static/css/main.9e54b37b.chunk.css.map": "/ev-generator/static/css/main.9e54b37b.chunk.css.map",
+    "static/js/2.3bbbd266.chunk.js.LICENSE.txt": "/ev-generator/static/js/2.3bbbd266.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9040c702.js",
+    "static/js/2.3bbbd266.chunk.js",
+    "static/css/main.9e54b37b.chunk.css",
+    "static/js/main.96dad088.chunk.js"
+  ]
+}
