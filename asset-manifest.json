@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/ev-generator/static/css/main.a997875b.chunk.css",
-    "main.js": "/ev-generator/static/js/main.96dad088.chunk.js",
-    "main.js.map": "/ev-generator/static/js/main.96dad088.chunk.js.map",
+    "main.css": "/ev-generator/static/css/main.bcfd88b3.chunk.css",
+    "main.js": "/ev-generator/static/js/main.60941a49.chunk.js",
+    "main.js.map": "/ev-generator/static/js/main.60941a49.chunk.js.map",
     "runtime-main.js": "/ev-generator/static/js/runtime-main.9040c702.js",
     "runtime-main.js.map": "/ev-generator/static/js/runtime-main.9040c702.js.map",
-    "static/js/2.3bbbd266.chunk.js": "/ev-generator/static/js/2.3bbbd266.chunk.js",
-    "static/js/2.3bbbd266.chunk.js.map": "/ev-generator/static/js/2.3bbbd266.chunk.js.map",
+    "static/js/2.456faad7.chunk.js": "/ev-generator/static/js/2.456faad7.chunk.js",
+    "static/js/2.456faad7.chunk.js.map": "/ev-generator/static/js/2.456faad7.chunk.js.map",
     "index.html": "/ev-generator/index.html",
-    "static/css/main.a997875b.chunk.css.map": "/ev-generator/static/css/main.a997875b.chunk.css.map",
-    "static/js/2.3bbbd266.chunk.js.LICENSE.txt": "/ev-generator/static/js/2.3bbbd266.chunk.js.LICENSE.txt"
+    "static/css/main.bcfd88b3.chunk.css.map": "/ev-generator/static/css/main.bcfd88b3.chunk.css.map",
+    "static/js/2.456faad7.chunk.js.LICENSE.txt": "/ev-generator/static/js/2.456faad7.chunk.js.LICENSE.txt",
+    "static/media/logo.647e8670.png": "/ev-generator/static/media/logo.647e8670.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9040c702.js",
-    "static/js/2.3bbbd266.chunk.js",
-    "static/css/main.a997875b.chunk.css",
-    "static/js/main.96dad088.chunk.js"
+    "static/js/2.456faad7.chunk.js",
+    "static/css/main.bcfd88b3.chunk.css",
+    "static/js/main.60941a49.chunk.js"
   ]
 }
