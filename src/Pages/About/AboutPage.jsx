@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { ModalContext } from "../../Components/Contexts/ModalContext";
+
 import "./AboutPage.scss";
 
 import Button from "../../Components/utility/Button";
@@ -11,10 +13,6 @@ function AboutPage() {
   const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleModal = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <div className="about__wrapper">
@@ -27,7 +25,7 @@ function AboutPage() {
       <div className="about__buttons">
         <Button
           type={"button"}
-          handleClick={handleModal}
+          handleClick={() => setIsOpen(!isOpen)}
           buttonText={"Changelog"}
         />
         <Button
@@ -36,7 +34,9 @@ function AboutPage() {
           buttonText={"Back to evaluation"}
         />
       </div>
-      {isOpen && <Modal handleClick={handleModal} />}
+      <ModalContext.Provider value={{ isOpen, setIsOpen }}>
+        {isOpen ? <Modal /> : null}
+      </ModalContext.Provider>
     </div>
   );
 }

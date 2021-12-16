@@ -1,8 +1,12 @@
 import ReactDOM from "react-dom";
+import { useContext } from "react";
 
 import "./Modal.scss";
+import { ModalContext } from "../Contexts/ModalContext";
+import Button from "../utility/Button";
 
 const Modal = (props) => {
+  const { isOpen, setIsOpen } = useContext(ModalContext);
   return ReactDOM.createPortal(
     <div className="modal__changelog">
       <div className="modal__wrapper">
@@ -51,13 +55,11 @@ const Modal = (props) => {
           </ul>
         </div>
         <div className="modal__close_wrapper">
-          <button
-            className="modal__close"
-            type="button"
-            onClick={props.handleClick}
-          >
-            Close
-          </button>
+          <Button
+            buttonType="button"
+            buttonText="Close"
+            handleClick={() => setIsOpen(!isOpen)}
+          />
         </div>
       </div>
     </div>,

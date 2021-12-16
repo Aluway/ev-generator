@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route element={<Homepage />} path="/ev-generator" />
-        <Route element={<AboutPage />} path="/about" />
+        <Route element={<AboutPage />} path="ev-generator/about" />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -16,7 +16,7 @@ function NavBar() {
             </div>
           </NavLink>
           <ul className="nav__menu">
-            <NavLink to="/about" className="menu__item">
+            <NavLink to="ev-generator/about" className="menu__item">
               About
             </NavLink>
           </ul>
