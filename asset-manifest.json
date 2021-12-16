@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/ev-generator/static/css/main.bcfd88b3.chunk.css",
-    "main.js": "/ev-generator/static/js/main.60941a49.chunk.js",
-    "main.js.map": "/ev-generator/static/js/main.60941a49.chunk.js.map",
+    "main.js": "/ev-generator/static/js/main.3c91a99f.chunk.js",
+    "main.js.map": "/ev-generator/static/js/main.3c91a99f.chunk.js.map",
     "runtime-main.js": "/ev-generator/static/js/runtime-main.9040c702.js",
     "runtime-main.js.map": "/ev-generator/static/js/runtime-main.9040c702.js.map",
-    "static/js/2.456faad7.chunk.js": "/ev-generator/static/js/2.456faad7.chunk.js",
-    "static/js/2.456faad7.chunk.js.map": "/ev-generator/static/js/2.456faad7.chunk.js.map",
+    "static/js/2.7d996c06.chunk.js": "/ev-generator/static/js/2.7d996c06.chunk.js",
+    "static/js/2.7d996c06.chunk.js.map": "/ev-generator/static/js/2.7d996c06.chunk.js.map",
     "index.html": "/ev-generator/index.html",
     "static/css/main.bcfd88b3.chunk.css.map": "/ev-generator/static/css/main.bcfd88b3.chunk.css.map",
-    "static/js/2.456faad7.chunk.js.LICENSE.txt": "/ev-generator/static/js/2.456faad7.chunk.js.LICENSE.txt",
+    "static/js/2.7d996c06.chunk.js.LICENSE.txt": "/ev-generator/static/js/2.7d996c06.chunk.js.LICENSE.txt",
     "static/media/logo.647e8670.png": "/ev-generator/static/media/logo.647e8670.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9040c702.js",
-    "static/js/2.456faad7.chunk.js",
+    "static/js/2.7d996c06.chunk.js",
     "static/css/main.bcfd88b3.chunk.css",
-    "static/js/main.60941a49.chunk.js"
+    "static/js/main.3c91a99f.chunk.js"
   ]
 }
