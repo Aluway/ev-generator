@@ -9,7 +9,7 @@ function EvSetup(props) {
 
   useEffect(() => {
     Object.keys(setting).length === 0 || setting.studentName.length === 0
-      ? console.log("put the name")
+      ? console.log("Enter the name")
       : dispatch(pushEv(evPros, evCons, evThanks));
   });
 
@@ -78,18 +78,6 @@ function EvSetup(props) {
       evCons = randomizer(storedCons.def)[0];
   }
 
-  // if (setting.paramReading) {
-  //   evCons = randomizer(storedCons.reading)[0];
-  // } else if (setting.paramSpeaking) {
-  //   evCons = randomizer(storedCons.speaking)[0];
-  // } else if (setting.paramVocabulary) {
-  //   evCons = randomizer(storedCons.vocabulary)[0];
-  // } else if (setting.paramGrammar) {
-  //   evCons = randomizer(storedCons.grammar)[0];
-  // } else {
-  //   evCons = randomizer(storedCons.def)[0];
-  // }
-
   evThanks = `${thanksFirst
     .replace("NAME", setting.studentName)
     .replace("ADJ", adjectives[6])} ${thanksSecond
@@ -97,10 +85,6 @@ function EvSetup(props) {
     .replace("ADJ", adjectives[7])} ${thanksThird
     .replace("NAME", setting.studentName)
     .replace("ADJ", adjectives[8])}`;
-
-  // Object.keys(setting).length === 0 || setting.studentName.length === 0
-  //   ? alert("Enter a name!")
-  //   : dispatch(pushEv(evPros, evCons, evThanks));
 
   return null;
 }

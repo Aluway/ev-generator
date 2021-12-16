@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Button from "../utility/Button";
-import CheckBox from "../utility/CheckBox";
+import Radio from "../utility/Radio";
 
 import { useDispatch } from "react-redux";
 import submitForm from "../../actions/submitForm";
@@ -13,19 +13,11 @@ function EvSetting() {
 
   const [studentName, setStudentName] = useState("");
   const [additions, setAdditions] = useState("");
-  const [consParam, setConsParam] = useState("");
-  const [isDisabled, setIsDisabled] = useState(false);
-  const [paramValue, setParamValue] = useState("");
+  const [consParam, setConsParam] = useState("reading");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(submitForm(studentName, additions, consParam));
-  };
-
-  const handleChange = (e, value) => {
-    setConsParam(value);
-    setParamValue(e.target.value);
-    setIsDisabled(!isDisabled);
   };
 
   return (
@@ -60,59 +52,14 @@ function EvSetting() {
         </div>
         <div className="improve__wrapper">
           <h3>What to improve?</h3>
-          <div className="checkbox__wrapper">
-            <div className="form__input_wrapper checkbox_input">
-              <CheckBox
-                disabled={isDisabled}
-                param={"reading"}
-                changeParam={handleChange}
-                improveParam={"Reading"}
-                improveId={"input__param_1"}
-                improveName={"input__param_1"}
-                checked={paramValue}
-              />
-            </div>
-            <div className="form__input_wrapper checkbox_input">
-              <CheckBox
-                disabled={isDisabled}
-                param={"speaking"}
-                changeParam={handleChange}
-                improveParam={"Speaking"}
-                improveId={"input__param_2"}
-                improveName={"input__param_2"}
-                checked={paramValue}
-              />
-            </div>
-            <div className="form__input_wrapper checkbox_input">
-              <CheckBox
-                disabled={isDisabled}
-                param={"vocabulary"}
-                changeParam={handleChange}
-                improveParam={"Vocabulary"}
-                improveId={"input__param_3"}
-                improveName={"input__param_3"}
-                checked={paramValue}
-              />
-            </div>
-            <div className="form__input_wrapper checkbox_input">
-              <CheckBox
-                disabled={isDisabled}
-                param={"grammar"}
-                changeParam={handleChange}
-                improveParam={"Grammar"}
-                improveId={"input__param_4"}
-                improveName={"input__param_4"}
-                checked={paramValue}
-              />
-            </div>
-          </div>
-          <div className="form__buttons_wrapper">
-            <Button
-              formId={"setting__form"}
-              buttonType={"submit"}
-              buttonText={"Evaluate"}
-            />
-          </div>
+          <Radio required checked={consParam} changeParam={setConsParam} />
+        </div>
+        <div className="form__buttons_wrapper">
+          <Button
+            formId={"setting__form"}
+            buttonType={"submit"}
+            buttonText={"Evaluate"}
+          />
         </div>
       </form>
     </div>

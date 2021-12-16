@@ -18,7 +18,7 @@ function Footer() {
             Aluway
           </a>
         </div>
-        <div>v.0.8101121</div>
+        <div>v.1.0161221</div>
       </div>
     </div>
   );

@@ -1,17 +1,24 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./NavBar.scss";
+import logo from "../../misc/icons/logo.png";
 
 function NavBar() {
   return (
     <div className="nav__container">
       <nav className="navbar">
         <div className="nav__wrapper">
-          <div className="logo">EV Logo</div>
+          <NavLink to="/ev-generator">
+            <div className="logo">
+              <img className="logo__img" src={logo} alt="ev_logo" />
+              <div>Ev generator</div>
+            </div>
+          </NavLink>
           <ul className="nav__menu">
-            <li className="menu__item">Tweet-tweet</li>
-            <li className="menu__item">Woof</li>
-            <li className="menu__item">Meow</li>
+            <NavLink to="/about" className="menu__item">
+              About
+            </NavLink>
           </ul>
         </div>
       </nav>
