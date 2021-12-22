@@ -12,7 +12,7 @@ import reduxPromise from "redux-promise";
 
 //redux persist setup
 
-const store = applyMiddleware(reduxPromise)(createStore)(rootReducer);
+export const store = applyMiddleware(reduxPromise)(createStore)(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>

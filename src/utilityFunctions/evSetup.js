@@ -9,7 +9,7 @@ function EvSetup(props) {
 
   useEffect(() => {
     Object.keys(setting).length === 0 || setting.studentName.length === 0
-      ? console.log("Enter the name")
+      ? console.log()
       : dispatch(pushEv(evPros, evCons, evThanks));
   });
 
@@ -58,8 +58,7 @@ function EvSetup(props) {
   )} ${finalPart.replace("ADJ", adjectives[4])} ${compliment[1].replace(
     "ADJ",
     adjectives[5]
-  )}
-    `;
+  )}`;
 
   switch (setting.consParam) {
     case "reading":

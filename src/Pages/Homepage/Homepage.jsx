@@ -33,28 +33,26 @@ function Homepage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  dispatch(getPresets(presets)); // I just had to move it over there! OMG! AND THAT'S ALL? 5 HOURS JUST TO MOVE ONE LINE?
+  dispatch(getPresets(presets));
 
   if (loading) {
     return (
-      <div>
+      <>
         <NavBar />
         <div className="main__container">
           <h1 className="main__header">Wait a sec... Setting your app.</h1>
         </div>
-      </div>
+      </>
     );
   } else {
     return (
-      <div>
-        <div className="main__container">
-          <h1 className="main__header">Let's evaluate!</h1>
-          <div className="main__content">
-            <EvSetting />
-            <EvResult />
-          </div>
-          <EvSetup />
+      <div className="main__container">
+        <h1 className="main__header">Let's evaluate!</h1>
+        <div className="main__content">
+          <EvSetting />
+          <EvResult />
         </div>
+        <EvSetup />
       </div>
     );
   }
